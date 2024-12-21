@@ -1,3 +1,4 @@
+<?php include('./dbconnect.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,12 @@
 </head>
 <body>
 
+<!-- search data  -->
+ <form action="./search.php" method="get" style="display:flex; flex-direction:row; justify-content:end;">
+  <input type="text" name="searchInput">
+  <button type="submit" name="searchbtn">Search Now</button>
+ </form>
+ 
 <!-- .................................................Form To Collect Data From Students  -->
   <h1 class="heading">Fill The Form Below </h1>
   <div class="formAlign">
@@ -30,7 +37,7 @@
 
 <!--   ................................    Data Extracted From Database  -->
 <?php 
-include('./dbconnect.php');
+
 $sql="select * from studentdata";
 $result=mysqli_query($conn,$sql);
 // print_r($result);
