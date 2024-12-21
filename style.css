@@ -1,0 +1,38 @@
+.heading {
+  text-align: center;
+}
+
+.formAlign {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.responseTextsuccess {
+  display: flex;
+  background-color: rgb(5, 58, 1);
+  width: 79vw;
+  margin: auto;
+  margin-top: 40px;
+  padding-left: 20px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.responseTextsuccess p {
+  margin: 0;
+
+}
+
+.responseTexterr {
+  display: flex;
+  background-color: rgb(107, 2, 2);
+  width: 79vw;
+  margin: auto;
+  margin-top: 40px;
+  padding-left: 20px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
